@@ -51,15 +51,18 @@ function greetingFunc(){
     const d = new Date();
     let h =  d.getHours();
     let greeting = ""
-    if(h < 12){
+    if(0 < h && h < 5){
+        greeting = "Good night";
+    } else if(h < 12){
         greeting = "Good morning";
     } else if(h < 18){
         greeting = "Good afternoon";
     } else if(h < 20){
         greeting = "Good evening";
-    } else if (h < 24 || 0 < h < 5){
+    } else if (h < 24){
         greeting = "Good night";
     }
+    console.log(greeting);
     document.getElementById("greeting").innerHTML = greeting + ", I am Vidhya Vishwanath";
 }
 if(window.location.href.includes("index")){
