@@ -65,6 +65,6 @@ function greetingFunc(){
     console.log(greeting);
     document.getElementById("greeting").innerHTML = greeting + ", I am Vidhya Vishwanath";
 }
-if(window.location.href.includes("index")){
+if(!window.location.href.includes("contact") && !window.location.href.includes("cv") && !window.location.href.includes("fun")){
     greetingFunc();
 }
