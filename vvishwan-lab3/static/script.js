@@ -1,0 +1,67 @@
+let x = 5;
+let y = 7;
+let z = x + y;
+console.log(z);
+let A = "Hello ";
+let B = "world!";
+let C = A + B;
+console.log(C);
+
+function SumNPrint(x1, x2){
+    const x3 = x1 + x2;
+    console.log(x3);
+}
+
+SumNPrint(x, y);
+SumNPrint(A, B);
+
+if (C.length == z){
+    console.log("good job!");
+} else if(C.length < z){
+    console.log(z);
+} else {
+    console.log(C);
+}
+
+let L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
+let L2 = ["Apple", "Banana", "Kiwi", "Orange"];
+
+function findTheBanana(arr1){
+    for(let i = 0; i < arr1.length; i++){
+        if(arr1[i] == "Banana"){
+            alert("found a banana at " + i);
+        }
+    }
+}
+findTheBanana(L1);
+findTheBanana(L2);
+
+L1.forEach(function (item){
+    if(item == "Banana"){
+        alert("We found a banana in the first array");
+    }
+});
+L2.forEach(function (item){
+    if(item == "Banana"){
+        alert("We found a banana in the second array");
+    }
+});
+
+function greetingFunc(){
+    const d = new Date();
+    let h =  d.getHours();
+    let greeting = ""
+    if(h < 12){
+        greeting = "Good morning";
+    } else if(h < 18){
+        greeting = "Good afternoon";
+    } else if(h < 20){
+        greeting = "Good evening";
+    } else if (h < 24 || 0 < h < 5){
+        greeting = "Good night";
+    }
+    document.getElementById("greeting").innerHTML = greeting + ", I am Vidhya Vishwanath";
+}
+if(window.location.href.includes("index")){
+    greetingFunc();
+}
