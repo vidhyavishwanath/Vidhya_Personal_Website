@@ -68,3 +68,31 @@ function greetingFunc(){
 if(!window.location.href.includes("contact") && !window.location.href.includes("cv") && !window.location.href.includes("fun")){
     greetingFunc();
 }
+
+function addYear(){
+    const d = new Date();
+    let y = d.getFullYear();
+    document.getElementById("copyYear").innerHTML = "© " + y + " Vidhya Vishwanath - All Rights Reserved";
+}
+
+function showList(){
+    document.querySelector("ul").style.display = "block";
+    document.getElementById("funButton").style.display = "none";
+}
+
+$(document).ready(function(){
+    $("#readMore").click(function(){
+      $("#intro").toggle(); 
+    });
+});
+
+function checkValidInput(){
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const comment = document.getElementById("comment");
+    if(!name.checkValidity() || !email.checkValidity() || !comment.checkValidity()){
+        document.getElementById("errorMessage").style.display = "block";
+    } else {
+        document.getElementById("errorMessage").style.display = "none"; 
+    }
+}
