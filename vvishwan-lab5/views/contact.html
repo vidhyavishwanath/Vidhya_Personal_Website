@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vidhya Vishwanath">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Vidhya Vishwanath's professional website">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src = "../static/script.js" defer></script>
+    <title>Vidhya</title>
+</head>
+<body style="font-family: Arial" onload="addYear()">
+    <header>
+        <h1>Vidhya Vishwanath</h1>
+        <nav class = "nav">
+            <a href = "../../index.html">About</a>
+            <a href = "cv.html">Resume</a>
+            <a href = "contact.html">Contact Me</a>
+            <a href = "fun.html">Hobbies</a>
+        </nav>
+    </header>
+    <div id = "mainLayout">
+        <div id = "item1">
+            <h2 class = "item">Find Me</h2>
+            <iframe  class = "item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4487988397773!2d-79.94543018786624!3d40.443202671316136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie%20Mellon%20University!5e0!3m2!1sen!2sus!4v1742771326074!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id = "item2">
+            <h2 class = "item">Contact Me</h2>
+            <form class = "item">
+                <label for = "name" >Your Name (required): </label>
+                <input type="text" id="name" name="name" required>
+                <label for = "email">Your Email: </label>
+                <input type="email" id="email" name="email" required>
+                <label>Your Comment: </label>
+                <br>
+                <textarea rows = "15" cols = "30" id="comment" name="comment" required></textarea>
+                <br>
+                <input id="submit" type="submit" value="Submit" onclick = "checkValidInput()">
+            </form>
+            <h4 class = "item" id = "errorMessage">Enter Valid Input</h4>
+        </div>
+        <div id = "item3">
+            <table class = "item">
+                <tr>         
+                    <th>Contact Method Description</th>
+                </tr>
+                <tr>
+                    <td><a href = "vvishwan@andrew.cmu.edu">Email</a></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <footer id = "copyYear"></footer>
+</body>
+</html>
